@@ -12,7 +12,7 @@ services:
     startCommand: uv run s14code serve --host 0.0.0.0
     envVars:
       - key: GLC_BASE_URL
-        value: https://glc_v3.onrender.com
+        value: https://glc-v3.onrender.com
       - key: S13_PORT
         value: "8113"
       - key: S13_HOST
