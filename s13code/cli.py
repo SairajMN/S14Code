@@ -14,7 +14,7 @@ def main() -> None:
     args = parser.parse_args()
     if args.command == "serve":
         if not os.getenv("GLC_BASE_URL"):
-            print("s13code: GLC_BASE_URL is required to serve. See .env.example.", file=sys.stderr)
+            print("s13code error: GLC_BASE_URL is not set. Startup aborted.", file=sys.stderr)
             sys.exit(1)
 
         import uvicorn
